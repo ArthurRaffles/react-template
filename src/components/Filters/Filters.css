@@ -1,0 +1,27 @@
+:root {
+  --black-colour: #191919;
+  --very-dark-grey-colour: #222;
+  --mid-grey-colour: #444;
+  --light-grey-colour: #474950;
+  --very-light-grey-colour: #ccc;
+  --light-grey-colour-faint: rgba(71, 73, 80, 0.4);
+  --white-colour: #fff;
+  --component-border-colour: var(--light-grey-colour);
+  --component-thumb-colour: var(--mid-grey-colour);
+  --component-text-colour: var(--very-light-grey-colour);
+  --component-background-colour: var(--very-dark-grey-colour); }
+
+/* Bank Color Pallet */
+:root {
+  --global-component-margin: 20px;
+  --global-font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --global-font-size: 14px; }
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(71, 73, 80, 0.4) !important;
+  width: 350px; }
+  .filters .title {
+    font-size: 26px;
+    margin-left: 10px; }

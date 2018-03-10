@@ -1,0 +1,18 @@
+@import '../../styles/palette.scss';
+@import '../../styles/variables.scss';
+
+$ui-tabs-nav-height: 32px;
+.filters {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $light-grey-colour-faint !important;
+  width: 350px;
+  .title {
+    font-size: $font-size-title;
+    margin-left: 10px;
+  }
+  label {
+
+  }
+}
+

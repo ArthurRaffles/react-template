@@ -1,0 +1,81 @@
+
+:root {
+    --black-colour: rgb(25, 25, 25);
+    --very-dark-grey-colour: #222;
+    --mid-grey-colour: #444;
+    --light-grey-colour: rgb(71, 73, 80);
+    --very-light-grey-colour: #ccc;
+    --light-grey-colour-faint: rgba(71, 73, 80, 0.4);
+    --white-colour: #fff;
+
+
+    --component-border-colour: var(--light-grey-colour);
+    --component-thumb-colour: var(--mid-grey-colour);
+    --component-text-colour: var(--very-light-grey-colour);
+    --component-background-colour: var(--very-dark-grey-colour)
+}
+
+$white: #FFF;
+$off-white: #dadada;
+$black: #000;
+$indianred: indianred;
+
+$base-bg: #222222;
+$input-bg-std: #191919;
+$input-bg-light1: #303030;
+$input-bg-dark1: #141414;
+$input-text-grey1: #6d6d6d;
+$light-grey-colour-faint: rgba(71, 73, 80, 0.4);
+
+$input-active-highlight: #262626;
+
+$light-grey: #ccc;
+$dark-grey1: #333;
+$darker-grey : #444;
+$grey: #888;
+
+
+$sc-blue-light: #7CAED4;
+$sc-teal: #0ce3ac;
+$sc-blue1: #28415B;
+$panel-grey1: #474950;
+$row-selection-blue: #4a708b;
+$row-hover-blue: rgba(103, 199, 233, 0.1);
+$row-insert-green: rgba(63, 156, 53, 0.2);
+
+$btn-blue-default: #375a7f;
+$btn-blue-info: #3498db;
+$btn-blue-hover: #28415b;
+$btn-blue-focus: #1d2f43;
+$btn-black-default: #464545;
+$btn-green-default: #00bc8c;
+$btn-border-focus: #101b26;
+$btn-border-active: #375a7f;
+$drodown-border: #53555e;
+
+$table-border: lighten($color: $panel-grey1, $amount: 5%);
+
+$msg-success: rgb(123, 183, 83);
+$msg-error: $indianred;
+$msg-warning: rgb(163, 143, 83);
+
+
+/* Bank Color Pallet */
+$scb-core-pms-289c: rgb(0,15,70);
+$scb-core-sc-primary-blue: rgb(0,117,176);
+$scb-core-sc-light-blue: rgb(0,159,218);
+$scb-core-sc-dark-blue: rgb(0,92,132);
+$scb-core-sc-primary-green: rgb(63,156,53);
+$scb-core-sc-light-green: rgb(105,190,40);
+$scb-supp-sc-grey-1: rgb(230,231,232);
+$scb-supp-sc-grey-2: rgb(188,190,192);
+$scb-supp-sc-grey-3: rgb(147,149,152);
+$scb-supp-sc-grey-4: rgb(109,110,113);
+$scb-supp-sc-light-green-1: rgb(233,244,231);
+$scb-supp-sc-light-green-2: rgb(195,226,193);
+$scb-supp-sc-light-green-3: rgb(159,209,139);
+$scb-supp-sc-light-green-4: rgb(106,193,123);
+$scb-supp-sc-light-blue-1: rgb(219,232,243);
+$scb-supp-sc-light-blue-2: rgb(161,197,224);
+$scb-supp-sc-light-blue-3: rgb(107,168,208);
+$scb-supp-sc-light-blue-4: rgb(40,144,192);

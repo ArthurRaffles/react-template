@@ -1,0 +1,35 @@
+@import '../../styles/palette.scss';
+@import '../../styles/prime.styles.scss';
+
+.bonds-container {
+  background-color: red;
+  border: 1px solid lighten($color: $panel-grey1, $amount: 5%);
+}
+
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active {
+  background-color: transparent !important;
+  border: 1px solid $light-grey-colour-faint !important;
+}
+.ui-tabview .ui-tabview-nav li.ui-tabview-selected.ui-state-active a {
+  color: $sc-blue-light!important;
+  background-color: #222;
+  border: 1px solid #474950;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+//body .ui-tabview {
+//  /* padding: 0; */
+//  padding-left: 4px !important;
+//  border-bottom: 1px solid red !important;
+//}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav, body .ui-tabview.ui-tabview-left .ui-tabview-nav, body .ui-tabview.ui-tabview-right .ui-tabview-nav {
+  padding: 0;
+  border: 0 none;
+  background: $input-bg-dark1!important;
+  border-radius: 0;
+  border-bottom: 1px solid $light-grey-colour-faint !important;
+}
+body .ui-tabview .ui-tabview-panel {
+  padding: 4px 0!important;
+
+}
