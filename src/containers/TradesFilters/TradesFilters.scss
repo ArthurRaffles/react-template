@@ -1,0 +1,32 @@
+@import '../../styles/prime.styles.scss';
+@import '../../styles/variables.scss';
+@import '../../styles/palette.scss';
+
+:root {
+    --dropdown-width: 200px;
+}
+ .trades-filters {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--component-background-colour);
+    color: var(--component-text-colour);
+
+}
+
+body .ui-dropdown {
+    width: var(--dropdown-width)!important;
+}
+.ui-accordion .ui-accordion-header {
+    width: 340px;
+}
+body .ui-accordion .ui-accordion-content {
+    padding: 1.25em;
+    width: 340px;
+}
+
+body .filter-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,187 @@
+:root {
+  --black-colour: #191919;
+  --very-dark-grey-colour: #222;
+  --mid-grey-colour: #444;
+  --light-grey-colour: #474950;
+  --very-light-grey-colour: #ccc;
+  --light-grey-colour-faint: rgba(71, 73, 80, 0.4);
+  --white-colour: #fff;
+  --component-border-colour: var(--light-grey-colour);
+  --component-thumb-colour: var(--mid-grey-colour);
+  --component-text-colour: var(--very-light-grey-colour);
+  --component-background-colour: var(--very-dark-grey-colour); }
+
+/* Bank Color Pallet */
+:root {
+  --global-component-margin: 20px;
+  --global-font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --global-font-size: 14px; }
+
+body .ui-corner-all {
+  border-radius: 0 !important; }
+
+body .ui-dropdown .ui-dropdown-label {
+  background-color: var(--black-colour) !important; }
+
+body .ui-inputtext {
+  background-color: var(--black-colour);
+  border-radius: 0 !important; }
+
+body .ui-dropdown {
+  border: 0; }
+
+body .ui-widget-content {
+  background-color: var(--black-colour) !important;
+  border: 0; }
+
+body .ui-dropdown {
+  color: var(--white-colour) !important;
+  border: 1px solid var(--component-border-colour) !important;
+  border-radius: 0;
+  margin-left: 5px;
+  background-color: var(--black-colour);
+  width: 200px !important; }
+
+.ui-dropdown .ui-dropdown-trigger {
+  border: 1px solid var(--component-border-colour);
+  cursor: pointer;
+  width: 1.5em;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 .25em;
+  border-radius: 0;
+  background-color: var(--component-thumb-colour) !important; }
+
+.ui-accordion .ui-accordion-header {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #383838), color-stop(100%, #3d3d3d));
+  border: 1px solid #5f626b !important;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), inset 0 0 3px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), inset 0 0 3px rgba(255, 255, 255, 0.1);
+  margin-bottom: 1px;
+  height: 30px; }
+
+body .ui-accordion .ui-accordion-header a {
+  padding: 4px 4px !important;
+  font-family: var(--global-font-family);
+  font-size: var(--global-font-size); }
+
+body .ui-widget-content {
+  background-color: #ffffff;
+  border: 0 !important; }
+
+.ui-accordion .ui-accordion-content {
+  padding: .1em 0 !important;
+  border-top: 0;
+  zoom: 1; }
+
+.fa-fw {
+  margin-left: .3em;
+  width: 1.28571429em;
+  text-align: left !important; }
+
+body .ui-dropdown:not(.ui-state-disabled):hover {
+  border: 0 !important; }
+
+body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item:not(.ui-state-highlight):hover {
+  background-color: var(--black-colour) !important;
+  color: var(--white-colour) !important; }
+
+.ui-dropdown .ui-dropdown-trigger .fa {
+  margin-left: 0 !important; }
+
+a {
+  padding: .4em .5em .4em 0;
+  color: white;
+  text-decoration: none;
+  border-left: .2em solid transparent; }
+
+.ui-accordion-content {
+  background: var(--black-colour);
+  padding: 0;
+  overflow: visible; }
+
+.ui-tabview.ui-tabview-top > .ui-tabview-nav {
+  padding-left: 0; }
+
+.ui-tabview .ui-tabview-nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  border-bottom: 1px solid #474950; }
+  .ui-tabview .ui-tabview-nav li {
+    margin: 0 1px -1px 0; }
+    .ui-tabview .ui-tabview-nav li a {
+      position: relative;
+      display: block;
+      padding: .3em 1.5em 5px .5em;
+      color: #dadada;
+      background: #303030;
+      border: 1px solid #424242;
+      border-radius: 0; }
+    .ui-tabview .ui-tabview-nav li .ui-tabview-close {
+      position: absolute;
+      right: 2px;
+      top: -1px; }
+      .ui-tabview .ui-tabview-nav li .ui-tabview-close:hover {
+        color: #7CAED4; }
+    .ui-tabview .ui-tabview-nav li .ui-tabview-left-icon,
+    .ui-tabview .ui-tabview-nav li .ui-tabview-right-icon {
+      vertical-align: baseline; }
+    .ui-tabview .ui-tabview-nav li.ui-tabview-selected.ui-state-active {
+      top: 0;
+      box-shadow: 2px 0 0 rgba(0, 0, 0, 0.3);
+      z-index: 1100; }
+      .ui-tabview .ui-tabview-nav li.ui-tabview-selected.ui-state-active a {
+        color: #7CAED4;
+        background-color: #222222;
+        border: 1px solid #474950;
+        border-bottom-color: transparent;
+        cursor: default; }
+      .ui-tabview .ui-tabview-nav li.ui-tabview-selected.ui-state-active .ui-tabview-close {
+        color: #7CAED4; }
+
+:root {
+  --global-component-margin: 20px;
+  --global-font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --global-font-size: 14px; }
+
+:root {
+  --black-colour: #191919;
+  --very-dark-grey-colour: #222;
+  --mid-grey-colour: #444;
+  --light-grey-colour: #474950;
+  --very-light-grey-colour: #ccc;
+  --light-grey-colour-faint: rgba(71, 73, 80, 0.4);
+  --white-colour: #fff;
+  --component-border-colour: var(--light-grey-colour);
+  --component-thumb-colour: var(--mid-grey-colour);
+  --component-text-colour: var(--very-light-grey-colour);
+  --component-background-colour: var(--very-dark-grey-colour); }
+
+/* Bank Color Pallet */
+:root {
+  --dropdown-width: 200px; }
+
+.trades-filters {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--component-background-colour);
+  color: var(--component-text-colour); }
+
+body .ui-dropdown {
+  width: var(--dropdown-width) !important; }
+
+.ui-accordion .ui-accordion-header {
+  width: 340px; }
+
+body .ui-accordion .ui-accordion-content {
+  padding: 1.25em;
+  width: 340px; }
+
+body .filter-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
