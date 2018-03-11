@@ -12,6 +12,7 @@ $filter-container-width: 340px;
     font-size: $font-size-title;
     margin-left: $global-component-margin;
   }
+  width: $filter-container-width;
 }
 .ui-accordion .ui-accordion-header {
   width: $filter-container-width;

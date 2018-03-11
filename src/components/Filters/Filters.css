@@ -20,7 +20,8 @@
 .filters {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(71, 73, 80, 0.4) !important; }
+  border: 1px solid rgba(71, 73, 80, 0.4) !important;
+  width: 340px; }
   .filters .title {
     font-size: 26px;
     margin-left: 10px; }

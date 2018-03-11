@@ -4,21 +4,23 @@ import TradesFiltersLayout, { TradesFilterProps } from './TradesFiltersLayout';
 import { TradesFilters } from './model';
 import { getTradesFilters } from './selectors';
 import { updateField } from './actions';
-
+import { ValidatorProps } from '../../components/Form/Form';
+import { bindActionCreators } from 'redux'
 interface Props {
 	startDate?: Date;
 	endDate?: Date;
 }
 
-interface DispatchFromProps {
+interface DispatchFromProps extends ValidatorProps {
 	updateFieldAction: (field: string, value: any) => void;
 }
 
 class TradesFiltersContainer extends React.Component<Props & DispatchFromProps, {}> {
 
 	handleChanged = (field: string, value: any) => {
-		const { updateFieldAction } = this.props;
+		const { updateFieldAction, isValid } = this.props;
 		updateFieldAction(field, value);
+		isValid(true);
 	};
 
 	render() {
@@ -41,7 +43,14 @@ const mapStateToProps = (state: any): Props => {
 		endDate
 	};
 };
-const mapDispatchToProps: DispatchFromProps = {
-	updateFieldAction: updateField
-};
-export default connect<Props, DispatchFromProps, void>(mapStateToProps, mapDispatchToProps)(TradesFiltersContainer);
+const mapDispatchToProps = (dispatch: any, props: ValidatorProps) => bindActionCreators({
+	updateFieldAction: updateField,
+	isValid: (isValid) => {
+		console.warn('calling..', isValid);
+		return props.isValid(isValid)
+	}
+}, dispatch);
+// const mapDispatchToProps: DispatchFromProps = {
+// 	updateFieldAction: updateField
+// };
+export default connect<Props, DispatchFromProps, ValidatorProps>(mapStateToProps, mapDispatchToProps)(TradesFiltersContainer);

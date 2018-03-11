@@ -4,19 +4,23 @@ import SalesFiltersLayout, { SalesFilterProps } from './SalesFiltersLayout';
 import { SalesFilters } from './model';
 import { getSalesFilters } from './selectors';
 import { updateField } from './actions';
+import { RootState } from '../../store/models';
+import { bindActionCreators } from 'redux';
+import { ValidatorProps } from '../../components/Form/Form';
 
 interface Props {
 	countryOptions: string[];
 	country: string;
 }
-interface DispatchFromProps {
+interface DispatchFromProps extends ValidatorProps {
 	updateFieldAction: (field: string, value: any) => void;
 }
 class SalesFiltersContainer extends React.Component<Props & DispatchFromProps, {}> {
 
 	handleChanged = (field: string, value: any) => {
-		const { updateFieldAction } = this.props;
+		const { updateFieldAction, isValid } = this.props;
 		updateFieldAction(field, value);
+		isValid(true);
 	};
 
 	render() {
@@ -31,7 +35,7 @@ class SalesFiltersContainer extends React.Component<Props & DispatchFromProps, {
 		);
 	}
 }
-const mapStateToProps = (state: any): Props => {
+const mapStateToProps = (state: RootState): Props => {
 	const salesFilters: SalesFilters = getSalesFilters(state);
 	const { filterValues: { country }, countryOptions } = salesFilters;
 	return {
@@ -39,7 +43,14 @@ const mapStateToProps = (state: any): Props => {
 		countryOptions
 	}
 };
-const mapDispatchToProps: DispatchFromProps = {
-	updateFieldAction: updateField
-};
-export default connect<Props, DispatchFromProps, void>(mapStateToProps, mapDispatchToProps)(SalesFiltersContainer);
+const mapDispatchToProps = (dispatch: any, props: ValidatorProps) => bindActionCreators({
+	updateFieldAction: updateField,
+	isValid: (isValid) => {
+		console.warn('calling..', isValid);
+		return props.isValid(isValid)
+	}
+}, dispatch);
+// const mapDispatchToProps: DispatchFromProps = {
+// 	updateFieldAction: updateField
+// };
+export default connect<Props, DispatchFromProps, ValidatorProps>(mapStateToProps, mapDispatchToProps)(SalesFiltersContainer);
