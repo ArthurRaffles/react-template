@@ -1,18 +1,36 @@
 @import '../../styles/palette.scss';
 @import '../../styles/variables.scss';
 
-$ui-tabs-nav-height: 32px;
+$filter-container-height: 40px;
+$filter-container-width: 340px;
+
 .filters {
   display: flex;
   flex-direction: column;
   border: 1px solid $light-grey-colour-faint !important;
-  width: 350px;
   .title {
     font-size: $font-size-title;
-    margin-left: 10px;
+    margin-left: $global-component-margin;
   }
-  label {
+}
+.ui-accordion .ui-accordion-header {
+  width: $filter-container-width;
+}
+body .ui-accordion .ui-accordion-content {
+  padding: 1.25em;
+  width: $filter-container-width;
+}
 
+body .filter-item {
+  height: $filter-container-height;
+  margin-left: $global-component-margin;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  label {
+    width: 100px;
   }
 }
 

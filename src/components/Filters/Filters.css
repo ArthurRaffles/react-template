@@ -20,8 +20,24 @@
 .filters {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(71, 73, 80, 0.4) !important;
-  width: 350px; }
+  border: 1px solid rgba(71, 73, 80, 0.4) !important; }
   .filters .title {
     font-size: 26px;
     margin-left: 10px; }
+
+.ui-accordion .ui-accordion-header {
+  width: 340px; }
+
+body .ui-accordion .ui-accordion-content {
+  padding: 1.25em;
+  width: 340px; }
+
+body .filter-item {
+  height: 40px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+  body .filter-item label {
+    width: 100px; }
