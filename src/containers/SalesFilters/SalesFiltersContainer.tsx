@@ -45,12 +45,6 @@ const mapStateToProps = (state: RootState): Props => {
 };
 const mapDispatchToProps = (dispatch: any, props: ValidatorProps) => bindActionCreators({
 	updateFieldAction: updateField,
-	isValid: (isValid) => {
-		console.warn('calling..', isValid);
-		return props.isValid(isValid)
-	}
+	isValid: props.isValid
 }, dispatch);
-// const mapDispatchToProps: DispatchFromProps = {
-// 	updateFieldAction: updateField
-// };
 export default connect<Props, DispatchFromProps, ValidatorProps>(mapStateToProps, mapDispatchToProps)(SalesFiltersContainer);

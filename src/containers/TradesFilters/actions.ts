@@ -1,6 +1,6 @@
 import { Action } from 'redux';
 
-const prefix = 'SALES_FILTERS';
+const prefix = 'TRADES_FILTERS';
 export const TRADES_FILTERS_ACTIONS = {
 	UPDATE: `${prefix}/UPDATE_FILTER`
 };
